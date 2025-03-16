@@ -9,9 +9,9 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int('1909485')
-    API_HASH = str('cc35d89e519babd93edee46b5292ab11')
-    BOT_TOKEN = str('5596352093:AAE7ioBoCtREot6eCqDPZZWZXAk8DuHLLqD')
+    API_ID = int(API_ID)
+    API_HASH = str('API_HASH')
+    BOT_TOKEN = str('BOT_TOKEN')
     name = str('filetolinkbot')
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -37,4 +37,4 @@ class Var(object):
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()))
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1005462659779")).split()))
